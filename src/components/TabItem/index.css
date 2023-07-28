@@ -1,19 +1,18 @@
 /* Write your CSS here */
-
-.tab-item {
-  background-color: transparent;
-  margin-top: 20px;
-  padding: 10px;
+.tab-container {
+  list-style-type: none;
+  margin: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
-
-.tab-button {
+.button {
   background-color: transparent;
-  border: 0px;
-  font-size: 24px;
   color: #7b8794;
-  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Bree Serif';
+  font-size: 18px;
+  border: none;
 }
-
-.active-tab-button {
+.on-active-btn {
   color: #2563eb;
 }
