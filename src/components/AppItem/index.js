@@ -2,13 +2,13 @@
 import './index.css'
 
 const AppItem = props => {
-  const {appDetails} = props
-  const {appName, imageUrl} = appDetails
+  const {eachItem} = props
+  const {appName, imageUrl} = eachItem
 
   return (
-    <li className="app-item">
-      <img src={imageUrl} alt={appName} className="app-logo" />
-      <p className="app-name">{appName}</p>
+    <li className="app-container">
+      <img src={imageUrl} alt={appName} className="image" />
+      <p className="text">{appName}</p>
     </li>
   )
 }
