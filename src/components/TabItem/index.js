@@ -2,21 +2,21 @@
 import './index.css'
 
 const TabItem = props => {
-  const {tabDetails, onClickTabUpdate, isActive} = props
-  const {displayText, tabId} = tabDetails
+  const {eachItem, onClickTabUpdate, onActive} = props
+  const {displayText, tabId} = eachItem
 
-  const onClickTab = () => {
+  const onClickChange = () => {
     onClickTabUpdate(tabId)
   }
 
-  const isActiveTab = isActive ? 'active-tab-button' : ''
+  const getUnderLine = onActive ? 'on-active-btn' : ''
 
   return (
-    <li className="tab-item">
+    <li className="tab-container">
       <button
-        className={`tab-button ${isActiveTab}`}
         type="button"
-        onClick={onClickTab}
+        className={`button ${getUnderLine}`}
+        onClick={onClickChange}
       >
         {displayText}
       </button>
