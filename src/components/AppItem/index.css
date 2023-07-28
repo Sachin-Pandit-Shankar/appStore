@@ -1,28 +1,19 @@
 /* Write your CSS here */
-.app-logo {
-  width: 100px;
-  height: 100px;
-}
-
-.app-item {
-  background-color: #ffffff;
-  margin: 5px;
+.app-container {
+  list-style-type: none;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding-top: 10px;
-  width: 200px;
-  border-radius: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 15px;
 }
-
-.app-name {
-  font-size: 23px;
-  text-align: center;
+.image {
+  height: 105px;
 }
-
-@media screen and (max-width: 768px) {
-  .app-item {
-    max-width: 170px;
-  }
+.text {
+  color: #1e293b;
+  font-family: 'Bree Serif';
+  font-size: 20px;
 }
